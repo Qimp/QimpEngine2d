@@ -1,0 +1,8 @@
+#ifndef __MATH_FLOATEXCEPTIONS_H__
+#define __MATH_FLOATEXCEPTIONS_H__
+
+QIMP_BEGIN_NAMESPACE
+	void InitFloatExceptions ();
+QIMP_END_NAMESPACE
+
+#endif //__MATH_FLOATEXCEPTIONS_H__

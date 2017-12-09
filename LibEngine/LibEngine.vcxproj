@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\common\Log.cpp" />
+    <ClCompile Include="src\common\Object.cpp" />
+    <ClCompile Include="src\common\ReleasePool.cpp" />
+    <ClCompile Include="src\common\TimeManager.cpp" />
+    <ClCompile Include="src\common\Win32.cpp" />
+    <ClCompile Include="src\file\FileManager.cpp" />
+    <ClCompile Include="src\file\Image.cpp" />
+    <ClCompile Include="src\file\ImageJPG.cpp" />
+    <ClCompile Include="src\file\ImagePNG.cpp" />
+    <ClCompile Include="src\math\AABB.cpp" />
+    <ClCompile Include="src\math\AnimationCurve.cpp" />
+    <ClCompile Include="src\math\Color.cpp" />
+    <ClCompile Include="src\math\ColorSpaceConversion.cpp" />
+    <ClCompile Include="src\math\Curve.cpp" />
+    <ClCompile Include="src\math\FloatExceptions.cpp" />
+    <ClCompile Include="src\math\Gradient.cpp" />
+    <ClCompile Include="src\math\Math.cpp" />
+    <ClCompile Include="src\math\MathUtils.cpp" />
+    <ClCompile Include="src\math\Matrix3x3.cpp" />
+    <ClCompile Include="src\math\Matrix4x4.cpp" />
+    <ClCompile Include="src\math\OBB.cpp" />
+    <ClCompile Include="src\math\Polyline.cpp" />
+    <ClCompile Include="src\math\Quaternion.cpp" />
+    <ClCompile Include="src\math\Random.cpp" />
+    <ClCompile Include="src\math\Rect.cpp" />
+    <ClCompile Include="src\math\Sphere.cpp" />
+    <ClCompile Include="src\math\TinyVector.cpp" />
+    <ClCompile Include="src\math\Vector2.cpp" />
+    <ClCompile Include="src\math\Vector3.cpp" />
+    <ClCompile Include="src\math\Vector4.cpp" />
+    <ClCompile Include="src\render\RenderManager.cpp" />
+    <ClCompile Include="src\render\ShaderProgram.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\Global.h" />
+    <ClInclude Include="src\common\Log.h" />
+    <ClInclude Include="src\common\Object.h" />
+    <ClInclude Include="src\common\Qimp.h" />
+    <ClInclude Include="src\common\ReleasePool.h" />
+    <ClInclude Include="src\common\TimeManager.h" />
+    <ClInclude Include="src\common\Win32.h" />
+    <ClInclude Include="src\file\FileManager.h" />
+    <ClInclude Include="src\file\Image.h" />
+    <ClInclude Include="src\math\AABB.h" />
+    <ClInclude Include="src\math\AnimationCurve.h" />
+    <ClInclude Include="src\math\Color.h" />
+    <ClInclude Include="src\math\ColorConversion.h" />
+    <ClInclude Include="src\math\ColorMatrix.h" />
+    <ClInclude Include="src\math\Common.h" />
+    <ClInclude Include="src\math\Distance.h" />
+    <ClInclude Include="src\math\FlashMatrix.h" />
+    <ClInclude Include="src\math\FloatConversion.h" />
+    <ClInclude Include="src\math\FloatExceptions.h" />
+    <ClInclude Include="src\math\Gradient.h" />
+    <ClInclude Include="src\math\Int256.h" />
+    <ClInclude Include="src\math\Intersect.h" />
+    <ClInclude Include="src\math\LinearCurve.h" />
+    <ClInclude Include="src\math\Math.h" />
+    <ClInclude Include="src\math\MathPublic.h" />
+    <ClInclude Include="src\math\MathUtils.h" />
+    <ClInclude Include="src\math\Matrix3x3.h" />
+    <ClInclude Include="src\math\Matrix4x4.h" />
+    <ClInclude Include="src\math\OBB.h" />
+    <ClInclude Include="src\math\Plane.h" />
+    <ClInclude Include="src\math\PodMathTypes.h" />
+    <ClInclude Include="src\math\Point.h" />
+    <ClInclude Include="src\math\Polyline.h" />
+    <ClInclude Include="src\math\Polynomials.h" />
+    <ClInclude Include="src\math\Private.h" />
+    <ClInclude Include="src\math\Quaternion.h" />
+    <ClInclude Include="src\math\Rand.h" />
+    <ClInclude Include="src\math\Random.h" />
+    <ClInclude Include="src\math\Rect.h" />
+    <ClInclude Include="src\math\Sphere.h" />
+    <ClInclude Include="src\math\SphericalHarmonics.h" />
+    <ClInclude Include="src\math\TinyVector.h" />
+    <ClInclude Include="src\math\Type.h" />
+    <ClInclude Include="src\math\Vector2.h" />
+    <ClInclude Include="src\math\Vector3.h" />
+    <ClInclude Include="src\math\Vector4.h" />
+    <ClInclude Include="src\math\VectorUtils.h" />
+    <ClInclude Include="src\render\RenderManager.h" />
+    <ClInclude Include="src\render\ShaderProgram.h" />
+    <ClInclude Include="src\render\TexFormat.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{85E038D2-1662-47AE-82C4-A467ABC3F56C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LibEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)..\LibEngine\src;$(ProjectDir)..\LibEngine\depend\include;$(ProjectDir)..\LibEngine\depend\include\libpng;$(ProjectDir)..\LibEngine\depend\include\libjpeg;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\LibEngine\depend\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

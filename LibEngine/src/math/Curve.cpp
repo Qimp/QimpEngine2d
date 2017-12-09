@@ -1,0 +1,7 @@
+#include "Private.h"
+
+
+QIMP_BEGIN_NAMESPACE
+
+
+QIMP_END_NAMESPACE
